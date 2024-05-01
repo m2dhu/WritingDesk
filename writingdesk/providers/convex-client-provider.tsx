@@ -12,7 +12,7 @@
 
  const convex = new ConvexReactClient(convexUrl);
 
- export const ConvexClientProvider:React.FC<ConvexClientProviderProps> =({ children })=>{
+ const ConvexClientProvider:React.FC<ConvexClientProviderProps> =({ children })=>{
 return(
     <ClerkProvider>
         <ConvexProviderWithClerk useAuth={useAuth} client={convex}>
@@ -62,4 +62,4 @@ return(
 )
  }
 
- export default ConvexClientProvider
+ export default ConvexClientProvider;
